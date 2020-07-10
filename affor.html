@@ -19,6 +19,7 @@
     <nav class="site-header sticky-top py-1 ">
       <div
         class="container d-flex flex-column flex-md-row justify-content-between float-rigth"
+        id="red-header-part"
       >
         <div class="col-10"></div>
         <div class="col-2">
@@ -29,36 +30,46 @@
           </div>
         </div>
       </div>
-    </nav>
-    <br>
-    <div class="container center parallax">
-      <div class="row">
-        <div class="col-4">
-          <div id="logo" class="flex-col logo">
-            <div class="container">
-              <img
-                width="350"
-                height="100"
-                src="https://affor.es/wp-content/uploads/2019/03/logo_affor-1.png"
-                class="header_logo header-logo"
-                alt="AFFOR | Prevención Psicosocial" />
+      <div class="container-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div id="logo" class="flex-col logo">
+              <div class="container">
+                <img
+                  width="350"
+                  height="100"
+                  src="https://affor.es/wp-content/uploads/2019/03/logo_affor-1.png"
+                  class="header_logo header-logo"
+                  alt="AFFOR | Prevención Psicosocial" />
+              </div>
+                
+              </a>
             </div>
-              
-            </a>
           </div>
-        </div>
-        <div class="col-8">
-          <i class="fa fa-search fa-2" aria-hidden="true" style="color: gray;"></i>
-          <a class="py-2 d-none d-md-inline-block vertical" href="#">Tour</a>
-          <a class="py-2 d-none d-md-inline-block vertical" href="#">Product</a>
-          <a class="py-2 d-none d-md-inline-block vertical" href="#">Features</a>
-          <a class="py-2 d-none d-md-inline-block vertical" href="#">Enterprise</a>
-          <a class="py-2 d-none d-md-inline-block vertical" href="#">Support</a>
-          <a class="py-2 d-none d-md-inline-block vertical" href="#">Pricing</a>
-          <a class="py-2 d-none d-md-inline-block vertical" href="#">Cart</a>
+          <div class="col-8">
+            <i class="fa fa-search fa-2" aria-hidden="true" style="color: gray;"></i>
+            <a class="py-2 d-none d-md-inline-block vertical" href="#">Bienvenidos</a>
+            <a class="py-2 d-none d-md-inline-block vertical" href="#">Somos Affor</a>
+            <a class="py-2 d-none d-md-inline-block vertical" href="#">Servicios y soluciones</a>
+            <a class="py-2 d-none d-md-inline-block vertical" href="#">Actualidad</a>
+            <a class="py-2 d-none d-md-inline-block vertical" href="#">PAE</a>
+          </div>
+          
         </div>
         
       </div>
+    </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container center parallax">
+      
       <div class="row">
         <div class="col-12">
           #COVID-19
@@ -380,6 +391,13 @@
     </div>
   </body>
   <style>
+
+    div.container-header{
+      background-color: #ffffffd6;
+    }
+    .site-header{
+      background-color: white;
+    }
     .borders-separe{
       right: 20px;
       left: 20px;
@@ -493,4 +511,14 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"
   ></script>
+
+  <script>
+    $(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+        console.log(scroll)
+        if(scroll>100){
+          document.getElementById("red-header-part").style.display = "none"
+        }
+    });
+  </script>
 </html>
